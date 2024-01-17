@@ -1,0 +1,28 @@
+    1  #!/bin/bash -li
+    2  cd /ide/xterm || exit
+    3  exec /ide/xterm/bin/node /ide/xterm/index.cjs "$@"
+    4  git init
+    5  branch master
+    6  checkout master
+    7  git branch master
+    8  mkdir users
+    9  cd users
+   10  for i in {1..207}; do touch user${i}.txt
+   11  dir
+   12  git status
+   13  touch user/{user{1..207}.txt
+   14  touch user{1..207}.txt
+   15  gir status
+   16  git status
+   17  dir
+   18  cd ..
+   19  touch groups/group{1..69}.txt
+   20  mkdir goups
+   21  cd goups/
+   22  touch group{1..69}.txt
+   23  cd ..
+   24  mkdir subjects
+   25  cd subjects/
+   26  touch subject{1..50}.txt
+   27  cd ..
+   28  history > commands_logs.txt
